@@ -13,6 +13,13 @@ app = Flask(__name__)
 # routes
 @app.route('/', methods=['POST'])
 
+def home():
+    return "Welcome to ML App"
+
+
+# routes
+@app.route('/predict', methods=['POST'])
+
 def predict():
     # get data
     data = request.get_json(force=True)
