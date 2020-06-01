@@ -5,7 +5,7 @@ print(1)
 
 
 # load model
-model = pickle.load(open('model\\model.pkl','rb'))
+model = pickle.load(open('model\model.pkl','rb'))
 
 # app
 app = Flask(__name__)
