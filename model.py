@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 os.getcwd()
 
 # create df
-train = pd.read_csv('data\titanic.csv') # change file path
+train = pd.read_csv('titanic.csv') # change file path
 
 # drop null values
 train.dropna(inplace=True)
@@ -24,4 +24,4 @@ model.fit(X, y)
 model.score(X, y)
 
 ## export model to a pickel file
-pickle.dump(model, open('model\model.pkl', 'wb'))
+pickle.dump(model, open('model.pkl', 'wb'))
