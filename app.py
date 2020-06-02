@@ -2,7 +2,7 @@ import pandas as pd
 from flask import Flask, jsonify, request
 import _pickle as pickle
 import os
-import sklearn.linear_model._logistic
+from sklearn.linear_model import *
 
 # app
 app = Flask(__name__)

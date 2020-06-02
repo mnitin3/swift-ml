@@ -1,7 +1,7 @@
 import pandas as pd
 import _pickle as pickle
 import os
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import *
 
 ## Check current working directory
 os.getcwd()
