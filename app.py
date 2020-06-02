@@ -1,11 +1,13 @@
 import pandas as pd
 from flask import Flask, jsonify, request
 import pickle
-from sklearn.linear_model import LogisticRegression
-print(1)
+import sklearn.linear_model._logistic
 
 # app
 app = Flask(__name__)
+
+# load model
+model = pickle.load(open('model.pkl','rb'))
 
 # routes
 @app.route('/', methods=['GET', 'POST'])
@@ -13,17 +15,14 @@ app = Flask(__name__)
 def home():
     return "Welcome to ML App"
 
-
 # routes
 @app.route('/predict', methods=['GET','POST'])
 
 def predict():
-    # load model
-    model = pickle.load(open('model.pkl','rb'))
 
     # get data
     data = request.get_json(force=True)
-
+    
     # convert data into dataframe
     data.update((x, [y]) for x, y in data.items())
     data_df = pd.DataFrame.from_dict(data)
