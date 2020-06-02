@@ -1,5 +1,6 @@
 import pandas as pd
-import pickle, os
+import _pickle as pickle
+import os
 from sklearn.linear_model import LogisticRegression
 
 ## Check current working directory
