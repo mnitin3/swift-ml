@@ -22,8 +22,9 @@ def predict():
 
     # get data
     data = request.get_json(force=True)
-    
-    # convert data into dataframe
+    #print(data)
+    #data = {'Pclass': 3, 'Age': 2, 'SibSp': 1, 'Fare': 50}  
+    # convert data into data frame
     data.update((x, [y]) for x, y in data.items())
     data_df = pd.DataFrame.from_dict(data)
 
