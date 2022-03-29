@@ -165,7 +165,7 @@ pickleshare==0.7.5
 pkginfo==1.5.0.1
 pluggy==0.13.0
 ply==3.11
-poetry==1.0.5
+poetry==1.1.9
 prometheus-client==0.7.1
 promise==2.3
 prompt-toolkit==2.0.10
