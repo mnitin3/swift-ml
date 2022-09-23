@@ -169,7 +169,7 @@ poetry==1.0.5
 prometheus-client==0.7.1
 promise==2.3
 prompt-toolkit==2.0.10
-protobuf==3.11.2
+protobuf==3.18.3
 ptyprocess==0.6.0
 py==1.8.0
 pyasn1==0.4.8
